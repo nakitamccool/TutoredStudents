@@ -1,0 +1,6 @@
+for user in User.objects.all():
+    email = user.email
+    id = user.id
+    name = user.username
+    student = "\"%s\": {id: %s, email: \"%s\"}," %(name, id, email)
+	print student
